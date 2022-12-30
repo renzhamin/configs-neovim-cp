@@ -1,0 +1,110 @@
+snippet forv
+	for(auto i=${1:arr}.begin();i!=${1:arr}.end();i++){
+		${2:}
+	}
+
+snippet for
+	for(int i=0;i<n;i++){
+		$1
+	} 
+
+snippet kfor
+	for(int k=0;k<${1:n};k++){
+		${2:}
+	}
+
+snippet mfor
+	for(int i=0;i<${1:m};i++){
+		${2:}
+	}
+
+snippet case
+	cout<<"Case "<<T++<<": ";
+
+snippet clockend
+	end=clock();
+	double time=double(end-start)/double(CLOCKS_PER_SEC);
+	cout<<setprecision(5)<<fixed<<time<<"\n";
+
+snippet clockstart
+	clock_t start,end;
+	start=clock();
+
+snippet out
+	cout<<${1:s}<<"\n";
+
+snippet fast
+	ios_base::sync_with_stdio(0),cin.tie(0);
+
+snippet forone
+	for(int ${2:i}=1;$2<=${1:n};${3:++$2}){
+	}
+
+snippet yesno
+	cout<<(${1:f}?"YES\n":"NO\n");	
+
+snippet jsfor
+	for(auto &i:${1:arr}) 
+
+snippet memset
+	memset(${1:vis},${2:0},sizeof(${1:vis}));
+
+snippet nest
+	for(int i=0;i<n;i++){
+		for(int j=0;j<${1:m};j++){
+		}
+	}
+
+snippet preciseprint
+	cout<<setprecision(10)<<fixed<<${1:ans}<<"\n";
+
+snippet bgen
+	${1:arr}.begin(),${1:arr}.end()
+
+snippet rsort
+	sort(${1:arr},${1:arr}+n,greater<ll>());
+
+snippet rfor
+	for(int i=${1:n}-1;i>=0;i--){
+		${2:}
+	}
+
+snippet sort
+	sort(${1:arr},${1:arr}+n);
+
+snippet sorzero
+	(${1:f})?cout<<s<<"\n":cout<<0<<"\n";
+
+snippet take
+	for(int i=0;i<n;i++) cin>>${1:arr}[i];
+
+snippet wTc
+	int t,T=1;cin>>t;
+	while(t--){
+		$0
+	}
+
+snippet wtc
+	int t;cin>>t;
+	while(t--){
+		${1:}
+	}
+
+snippet tca
+	int t;cin>>t;
+	while(t--){
+		int n; cin>>n;
+		vl arr(n);
+		for(int i=0;i<n;i++){
+			cin>>arr[i];
+		}
+
+		${1:}
+	}
+
+snippet vrsort
+	sort(${1:arr}.rbegin(),${1:arr}.rend());
+
+snippet vsort
+	sort(${1:arr}.begin(),${1:arr}.end());
+
